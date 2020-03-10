@@ -1,0 +1,16 @@
+.nav-bar {
+  width: 50%;
+  margin-left: 25%;
+  a {
+    figure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(157, 210, 244);
+      height: 100px;
+      img {
+        max-height: 50px;
+      }
+    }
+  }
+}
