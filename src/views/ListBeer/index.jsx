@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { list } from './../../services/database';
 import BeerItem from './../../components/BeerItem';
+import './style.scss';
 
 class ListBeer extends Component {
   constructor() {
@@ -31,10 +32,12 @@ class ListBeer extends Component {
   render() {
     return (
       <div>
+        <div className="beer__list">
+          {this.state.beers.map(beer => (
+            <BeerItem key={beer._id} {...beer} />
+          ))}
+        </div>
         <h1>List Beer</h1>
-        {this.state.beers.map(beer => (
-          <BeerItem key={beer._id} {...beer} />
-        ))}
       </div>
     );
   }

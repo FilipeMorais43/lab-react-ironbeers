@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { load as loadSingleBeer } from './../../services/database';
+import './style.scss';
 
 class SingleBeer extends Component {
   constructor(props) {
@@ -26,11 +27,11 @@ class SingleBeer extends Component {
   render() {
     const { beer } = this.state;
     return (
-      <div>
+      <div className="beer__item">
         <h1>SingleBeer</h1>
         {(beer && (
           <Fragment>
-            <figure>
+            <figure className="beer__image">
               <img src={beer.image_url} alt={beer.name} />
             </figure>
             <div>

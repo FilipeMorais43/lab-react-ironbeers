@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import './style.scss';
 
 class Home extends Component {
   render() {

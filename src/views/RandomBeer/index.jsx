@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { random as loadRandomBeer } from './../../services/database';
+import './style.scss';
 
 class RandomBeer extends Component {
   constructor(props) {

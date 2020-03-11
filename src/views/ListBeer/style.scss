@@ -1,0 +1,8 @@
+.beer__list {
+  .product__list {
+    @media (min-width: 30em) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
